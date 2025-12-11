@@ -1,0 +1,44 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Descendiente</title>
+    <style>
+        /* * REGLA CLAVE (Selector Descendiente): div p
+         * * Significado: Aplica el estilo a CUALQUIER elemento <p> que sea un descendiente 
+         * (hijo, nieto, bisnieto, etc.) de un elemento <div>.
+         * Es mucho menos estricto que el selector de hijo directo (div > p)
+         */
+        div p {
+            color: purple; /* Cambiamos el color a morado para diferenciarlo */
+            font-weight: bold; /*grosor e intensidad de la fuente*/
+        }
+
+        /* Hijo Directo (>) : Selecciona un elemento B si es el hermano inmediato que sigue al elemento A. */
+        /* div > p {color: red; /* Solo los hijos directos de div se pintan */
+
+        /* Descendiente (espacio): Selecciona un elemento B si está contenido en cualquier nivel dentro de un elemento A. 
+        NO SE PUEDE PIENTAR SOLO LOS HIJOS DIRECTOS */
+        
+        /* Hermano Adyacente (+): Solo selecciona al elemento justo después */
+        /* Hermano General (~): Selecciona a todos los hermanos que vienen después */
+
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <p>Párrafo hijo directo (Se aplica el estilo)</p> <!--Hijo directo--> <!-- Se pinta--> 
+        
+        <section>
+            <p>Párrafo hijo de section y nieto de div (Se aplica el estilo)</p> <!-- Se pinta--> 
+        </section>
+
+        <span>Esto es un texto que no es un párrafo</span>
+    </div>
+
+    <p>Párrafo fuera de div (No se aplica el estilo)</p>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- 1.Codificación de caracteres de caracteres -->
+    <meta charset="UTF-8">
+    <!-- 2.Metadatos con http-equiv (emulan cabeceras HTTP) -->
+     <meta http-equiv="Cache-Control" Content="no-cache">
+     <meta http-equiv="Content-Type" Content="text/html; charset=UTF-8">
+     <meta http-equiv="Refresh" Content="30">
+
+
+    <!-- 2.Metadatos con name (información sobre página) -->
+     <meta http-equiv="description" Content="Página de ejemplo de HTML con metadatos.">
+     <meta http-equiv="viewport" Content="width=device.width, initial-scale=1.0">
+     <meta http-equiv="author" Content="Noelia Ana Chabiri">
+     <meta http-equiv="robots" Content="Index Fololw">
+
+
+    <!-- 3- Título de la página-->
+     <title>Formulario Básico 3</title>
+</head>
+<body>
+
+<form action="/enviar_organizacion" method="post">
+
+    <h2>Registro de Preferencias</h2>
+
+    <fieldset>
+        <legend>Información Personal</legend>
+        
+        <label for="nombre_user">
+            Nombre:
+            <input type="text" id="nombre_user" name="nombre" required placeholder="Tu nombre completo">
+        </label>
+        
+        <br><br>
+        
+        <label for="correo_user">
+            Correo electrónico:
+            <input type="email" id="correo_user" name="correo" required placeholder="ejemplo@dominio.com">
+        </label>
+        
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Tus Preferencias</legend>
+        
+        <label for="color_fav">
+            Color favorito:
+            <input type="color" id="color_fav" name="color">
+        </label>
+
+        <br><br>
+
+        <p>Opción preferida:</p>
+        
+        <label for="opc_a">
+            <input type="radio" id="opc_a" name="opcion_preferida" value="A">
+            Opción A
+        </label>
+        
+        <label for="opc_b">
+            <input type="radio" id="opc_b" name="opcion_preferida" value="B">
+            Opción B
+        </label>
+        
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Aceptación</legend>
+        
+        <label for="terminos_check">
+            <input type="checkbox" id="terminos_check" name="acepta_terminos" required>
+            Acepto los términos y condiciones
+        </label>
+        
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Enviar Registro">
+
+</form>
+
+</body>
+</html>

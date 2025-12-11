@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Hermano Adyacente</title>
+    <style>
+        /* * REGLA CLAVE (Selector Hermano Adyacente): h1 + p
+         * * Significado: Aplica el color amarillo al elemento <p> 
+         * que está INMEDIATAMENTE después de un <h1>,
+         * siempre y cuando AMBOS (el <h1> y el <p>) compartan el mismo elemento padre.
+         */
+        h1 + p {
+            color: yellow; /* Estilo que se aplicará */
+        }
+
+        /* Hijo Directo (>) : Selecciona un elemento B si es el hermano inmediato que sigue al elemento A. */
+        /* div > p {color: red; /* Solo los hijos directos de div se pintan */
+
+        /* Descendiente (espacio): Selecciona un elemento B si está contenido en cualquier nivel dentro de un elemento A. 
+        NO SE PUEDE PIENTAR SOLO LOS HIJOS DIRECTOS */
+        
+        /* Hermano Adyacente (+): Solo selecciona al elemento justo después */
+        /* Hermano General (~): Selecciona a todos los hermanos que vienen después */
+
+    </style>
+</head>
+<body>
+    <h1>Título Principal</h1>
+    
+    <p>Párrafo justo después de h1</p> <!--Este se pinta-->
+    
+    <p>Párrafo que no es hermano adyacente de h1</p>
+    
+    <h2>Subtítulo de tipo h2</h2>
+</body>
+</html>

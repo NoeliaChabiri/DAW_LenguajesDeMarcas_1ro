@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Hermanos Generales</title>
+    <style>
+        /* * REGLA CLAVE (Selector Hermano General): h1 ~ p
+         * * Significado: Aplica el color amarillo a CUALQUIER elemento <p> 
+         * que SIGA a un elemento <h1>,
+         * siempre y cuando AMBOS (el <h1> y el <p>) compartan el mismo padre.
+         * NO importa cuántos otros elementos haya en medio.
+         */
+        h1 ~ p {
+            color: yellow; /* Estilo que se aplicará */
+        }
+
+        /* * Regla para asegurar que este párrafo se quede negro, 
+         * aunque la regla h1~p le aplique amarillo.
+         * (Generalmente, la regla más específica gana, pero aquí la pondremos para ser claros)
+         */
+        .no-color {
+            color: black;
+        }
+
+        /*Selecciona todos los elementos <p> que están al mismo nivel
+         (hermanos) que un <h1> y que vienen después de él, sin importar qué haya entre ellos.*/
+
+        /* Hijo Directo (>) : Selecciona un elemento B si es el hermano inmediato que sigue al elemento A. */
+        /* div > p {color: red; /* Solo los hijos directos de div se pintan */
+
+        /* Descendiente (espacio): Selecciona un elemento B si está contenido en cualquier nivel dentro de un elemento A. 
+        NO SE PUEDE PIENTAR SOLO LOS HIJOS DIRECTOS */
+        
+        /* Hermano Adyacente (+): Solo selecciona al elemento justo después */
+        /* Hermano General (~): Selecciona a todos los hermanos que vienen después */
+
+    </style>
+</head>
+<body>
+    
+    <p>Primer párrafo</p> 
+    
+    <h1>Titulo Principal</h1>
+    
+    <p>Párrafo justo después de h1</p> <!--Este se pinta-->
+    
+    <p>Párrafo que no es hermano adyacente de h1</p> <!--Este se pinta-->
+    
+    <p class="no-color">Tercer párrafo</p> 
+    
+    <h2>Subtitulo de tipo h2</h2>
+    
+    <p>Cuarto párrafo</p> <!--Este se pinta-->
+
+    <!--Simplemente son hermanos por que estan adentro del body-->
+
+
+
+</body>
+</html>

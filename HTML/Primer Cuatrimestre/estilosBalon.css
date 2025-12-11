@@ -1,0 +1,30 @@
+body { background-color: #291D33 ;
+       font-family: "Honeymoon", sans-serif;
+}
+
+h1 {
+    background-color:#420782 ;
+    color:#BF1F1F ;
+    text-align: center ;
+    line-height:1.5;   /* Ajusta altura de línea si quieres más vertical */
+
+
+}
+
+ol{
+    color: #241B1B;
+    background-color: #AB8ACF;
+    size: 20px ;
+    width: 50% ; /*Tamaño del recuadro*/
+    margin:0 auto;/*Estilo lo centra: el navegador calcula automáticamente el espacio necesario.*/ 
+    padding: 20px; /*Agrega espacio interno dentro del recuadro*/
+    list-style-position: inside; /*Mete los números de la lista dentro del recuadro*/
+
+
+}
+
+li {
+    text-align: left ;
+    font-size: 20px;
+
+}

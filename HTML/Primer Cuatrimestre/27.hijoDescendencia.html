@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de descendencia</title>
+    <style>
+        /* * REGLA CLAVE (Selector Descendiente): article p
+         * * Significado: Aplica el color azul a CUALQUIER elemento <p> 
+         * que sea un descendiente (hijo, nieto, etc.) de un elemento <article>.
+         * No importa cuántos elementos intermedios haya.
+         */
+        article p {
+            color: blue; /* Estilo que se aplicará */
+        }
+        
+        /* Hijo Directo (>) : Selecciona un elemento B si es el hermano inmediato que sigue al elemento A. */
+        /* div > p {color: red; /* Solo los hijos directos de div se pintan */
+
+        /* Descendiente (espacio): Selecciona un elemento B si está contenido en cualquier nivel dentro de un elemento A. 
+        NO SE PUEDE PIENTAR SOLO LOS HIJOS DIRECTOS */
+        
+        /* Hermano Adyacente (+): Solo selecciona al elemento justo después */
+        /* Hermano General (~): Selecciona a todos los hermanos que vienen después */
+
+    </style>
+</head>
+<body>
+    
+    <article>
+        <p>Párrafo dentro de article</p> <!-- Sí (directo de <article>) Se pinta--> 
+        
+        <div>
+            <p>Otro párrafo también dentro de article</p> <!-- Se pinta - Sí (descendiente de <article>)--> 
+        </div>
+    </article>
+    
+    <p>Párrafo fuera de article</p>
+        
+</body>
+</html>
