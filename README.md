@@ -1,6 +1,6 @@
 # DAW - Lenguajes de Marcas / Markup Languages
 
-Este repositorio está dedicado a las **actividades que realizo en Lenguajes de Marcas** durante el **primer año** de mi carrera.  
+Este repositorio está dedicado a las **actividades que realizo en Lenguajes de Marcas** durante mi carrera.  
 This repository is dedicated to the **activities I complete in Markup Languages** during my **first year** of study.
 
 ---
